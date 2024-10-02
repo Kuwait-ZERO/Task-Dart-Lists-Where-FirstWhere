@@ -3,7 +3,8 @@ void main(){
   
 
 
-
+var listOfOdd = findOddss([2,44,66,88,20,100]);
+var listWhere = findOdds([1,2,16,12,24,23]);
   List<int> numbers = [5, 3, 15, 4, 1];
   int largest = numbers[0];
   int sum = 0;
@@ -14,7 +15,9 @@ void main(){
   List<int> allowedVisitors = filterVisitors(visitorAges, minimumAge);
 
   print("Allowed visitors' ages: $allowedVisitors");   // print allowed Visitors
- print(findOdds([2,2,6,2,2,20]));
+ print(" The odd numbers: $listWhere");  // WHERE
+ print("the odd number: $listOfOdd" ); // orElse
+
 
   numbers.forEach((number) {
     if (number > largest) 
@@ -40,9 +43,15 @@ print(sum);
 List<int> filterVisitors(List<int> ages, int minAge) {
   return ages.where((age) => age > minAge).toList();
 }
-//WHERE and orElse
+//WHERE and orEls
 
 int  findOdds(List<int> number) {
+  return number.firstWhere((number) => number.isOdd); }
+
+  //orElse
+
+  int findOddss(List<int> number) {
   return number.firstWhere((number) => number.isOdd ,orElse:() =>0 );
+  
 }
 
