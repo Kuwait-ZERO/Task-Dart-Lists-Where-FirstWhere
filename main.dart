@@ -4,7 +4,7 @@ void main(){
 
 
 var listOfOdd = findOddss([2,44,66,88,20,100]);
-var listWhere = findOdds([1,2,16,12,24,23]);
+var listWhere = findOdds([6,2,16,17,24,23]);
   List<int> numbers = [5, 3, 15, 4, 1];
   int largest = numbers[0];
   int sum = 0;
@@ -15,8 +15,8 @@ var listWhere = findOdds([1,2,16,12,24,23]);
   List<int> allowedVisitors = filterVisitors(visitorAges, minimumAge);
 
   print("Allowed visitors' ages: $allowedVisitors");   // print allowed Visitors
- print(" The odd numbers: $listWhere");  // WHERE
- print("the odd number: $listOfOdd" ); // orElse
+ print("The odd numbers: $listWhere");  // WHERE
+ print("The odd number: $listOfOdd" ); // orElse
 
 
   numbers.forEach((number) {
@@ -33,7 +33,7 @@ numbers.forEach((number) {
    });
 
    // Print SUM
-print(sum);
+print("The sum number: $sum");
 
 
 
